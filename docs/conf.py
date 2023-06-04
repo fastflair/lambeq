@@ -25,7 +25,7 @@ release = version
 
 
 project = 'lambeq'
-copyright = '2021-2022 Cambridge Quantum Computing Ltd.'
+copyright = '2021-2023 Cambridge Quantum Computing Ltd.'
 author = 'Cambridge Quantum QNLP Dev Team'
 
 # -- General configuration ---------------------------------------------------
@@ -34,19 +34,20 @@ author = 'Cambridge Quantum QNLP Dev Team'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'm2r2',
     'nbsphinx',
     'numpydoc',
+    'sphinx_mdinclude',
     'sphinx.ext.autodoc',
     'sphinx.ext.viewcode',
     'sphinx.ext.graphviz',
     'sphinx.ext.inheritance_diagram',
     'sphinx.ext.intersphinx',
     'sphinxarg.ext',
+    'sphinxcontrib.jquery'
 ]
 
 intersphinx_mapping = {
-    'discopy': ("https://discopy.readthedocs.io/en/0.5/", None),
+    'discopy': ("https://docs.discopy.org/en/0.5.1.1/", None),
     'pennylane': ("https://pennylane.readthedocs.io/en/stable/", None),
 }
 
